@@ -3,11 +3,11 @@ import os
 import pickle
 
 vertex_dict = {}
-dump_path = './'
+dump_path = './D'
 data_path = './data/raw_double.csv'
 parse_neighbor = lambda s: (s[:s.find('(')], float(s[s.find('(')+1:s.find(')')]))
 
-class Graph():
+class Graph:
  
     def __init__(self, v_num, edges):
         self.v_num = v_num
