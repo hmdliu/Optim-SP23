@@ -1,8 +1,9 @@
 
+import os
 import pickle
 
 vertex_dict = {}
-dump_path = './D.pkl'
+dump_path = './'
 data_path = './data/raw_double.csv'
 parse_neighbor = lambda s: (s[:s.find('(')], float(s[s.find('(')+1:s.find(')')]))
 
@@ -68,7 +69,13 @@ def main():
         D.append(g.dijkstra(i))
 
     # dump results
-    with open(dump_path, 'wb') as f:
+    lines = []
+    lines.append(','.join([''] + name_list))
+    for i, n in enumerate(name_list):
+        lines.append(','.join([n] + [str(v) for v in D[i]]))
+    with open(os.path.join(dump_path, 'D.csv'), 'w') as f:
+        f.write('\n'.join(lines))
+    with open(os.path.join(dump_path, 'D.pkl'), 'wb') as f:
         pickle.dump(D, f)
     print('matrix D dumped successfully')
 
