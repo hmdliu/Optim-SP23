@@ -1,0 +1,26 @@
+B 3 C o m p i l a t i o n
+B 59 Include File Summary
+B 74 E x e c u t i o n
+I 74 D
+I 135 p
+B 143 Equation Listing    SOLVE placement Using MIP From line 54
+D 146 obj
+D 153 cap_cons
+D 158 ser_cons
+D 169 sol_cons
+B 181 Column Listing      SOLVE placement Using MIP From line 54
+E 184 z
+E 191 a
+E 212 sol
+B 391 Model Statistics    SOLVE placement Using MIP From line 54
+B 404 Solution Report     SOLVE placement Using MIP From line 54
+F 450 obj
+F 451 cap_cons
+F 456 ser_cons
+F 515 sol_cons
+G 3438 z
+G 3442 a
+G 6363 sol
+B 6428 E x e c u t i o n
+I 6430 z
+I 6431 sol

@@ -1,0 +1,146 @@
+
+--- Job main.gms Start 05/05/23 14:34:20 38.2.1 96226ea8 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\38\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\hl3797\Desktop\Optim_project\main.gms
+    PageSize 0
+    ScrDir C:\Users\hl3797\Desktop\Optim_project\225a\
+    SysDir C:\GAMS\38\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Large MUD - 20 User License                    S230307|0002AO-WIN
+          Shanghai New York University, Information Technology ServiDC14811
+          C:\GAMS\38\gamslice.txt
+          License Admin: James Gao, james.gao@nyu.edu                      
+Processor information: 1 socket(s), 4 core(s), and 4 thread(s) available
+GAMS 38.2.1   Copyright (C) 1987-2022 GAMS Development. All rights reserved
+--- Starting compilation
+--- main.gms(24) 3 Mb
+--- call GDXXRW.EXE D.xlsx par=D rng=A1:BC55
+
+GDXXRW           38.2.1 96226ea8 Feb 19, 2022          VS8 x86 32bit/MS Window
+Input file : C:\Users\hl3797\Desktop\Optim_project\D.xlsx
+Output file: C:\Users\hl3797\Desktop\Optim_project\D.gdx
+Total time = 641 Ms
+--- main.gms(25) 3 Mb
+--- GDXin=C:\Users\hl3797\Desktop\Optim_project\D.gdx
+--- GDX File ($gdxIn) C:\Users\hl3797\Desktop\Optim_project\D.gdx
+--- main.gms(31) 3 Mb
+--- call GDXXRW.EXE p.xlsx par=p rdim=1 rng=A1:B54
+
+GDXXRW           38.2.1 96226ea8 Feb 19, 2022          VS8 x86 32bit/MS Window
+Input file : C:\Users\hl3797\Desktop\Optim_project\p.xlsx
+Output file: C:\Users\hl3797\Desktop\Optim_project\p.gdx
+Total time = 625 Ms
+--- main.gms(32) 3 Mb
+--- GDXin=C:\Users\hl3797\Desktop\Optim_project\p.gdx
+--- GDX File ($gdxIn) C:\Users\hl3797\Desktop\Optim_project\p.gdx
+--- main.gms(55) 3 Mb
+--- Starting execution: elapsed 0:00:01.483
+--- main.gms(38) 4 Mb
+--- Generating MIP model placement
+--- main.gms(54) 5 Mb
+---   2,972 rows  2,971 columns  11,188 non-zeroes
+---   2,970 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.542
+
+IBM ILOG CPLEX   38.2.1 96226ea8 Feb 19, 2022          WEI x86 64bit/MS Window
+
+--- GAMS/Cplex licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.13 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 1.68 Mb (peak 1.70 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 20.1.0.1 link memory 0.09 Mb (peak 0.38 Mb)
+--- Starting Cplex
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Generic callback                                 0x50
+Found incumbent of value 274.629951 after 0.00 sec. (0.27 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 8 rows and 1 columns.
+Aggregator did 531 substitutions.
+Reduced MIP has 2432 rows, 2439 columns, and 7308 nonzeros.
+Reduced MIP has 2439 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (11.75 ticks)
+Probing time = 0.00 sec. (2.69 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 2432 rows, 2439 columns, and 7308 nonzeros.
+Reduced MIP has 2439 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (8.32 ticks)
+Probing time = 0.00 sec. (2.69 ticks)
+Clique table members: 2385.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (1.17 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Iteration:   161   Dual objective     =            34.296000
+Iteration:   288   Dual objective     =            47.624896
+Iteration:   394   Dual objective     =            54.355123
+Root relaxation solution time = 0.00 sec. (9.75 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          274.6300        0.0000           100.00%
+Found incumbent of value 274.629951 after 0.03 sec. (39.98 ticks)
+*     0     0      integral     0       58.1501       58.1501      471    0.00%
+Elapsed time = 0.03 sec. (40.46 ticks, tree = 0.00 MB)
+Found incumbent of value 58.150091 after 0.03 sec. (40.46 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (40.52 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (40.52 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.03sec (det. 40.52 ticks)
+
+--- Fixing integer variables and solving final LP...
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 2971 rows and 2971 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.32 ticks)
+
+--- Fixed MIP status (1): optimal.
+--- Cplex Time: 0.00sec (det. 2.24 ticks)
+
+
+Proven optimal solution
+MIP Solution:           58.150091    (471 iterations, 0 nodes)
+Final Solve:            58.150091    (0 iterations)
+
+Best possible:          58.150091
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model placement
+--- Executing after solve: elapsed 0:00:01.652
+--- main.gms(55) 5 Mb
+*** Status: Normal completion
+--- Job main.gms Stop 05/05/23 14:34:22 elapsed 0:00:01.666

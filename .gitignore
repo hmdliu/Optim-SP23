@@ -1,8 +1,7 @@
 tmp/
 *.DS_Store
 *.json
-*.swp
-*.log
+*.swps
 *.out
 *.err
 *.zip
