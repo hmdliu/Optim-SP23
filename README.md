@@ -10,9 +10,12 @@ This repo presents a model for the optimization of water cooler placement. This 
 - `histogram.ipynb`: Popularity scores visualization
 
 ## Visualizations
-Heat map for the shortest path distance matrix:
 
+#### Heat map for the shortest path distance matrix
 ![image](https://github.com/hmdliu/Optim-SP23/raw/main/D/D.png?raw=true)
+
+#### Optimal placement plan when K = 4
+![image](https://github.com/hmdliu/Optim-SP23/raw/main/D/K4.jpg?raw=true)
 
 ## Group Members
 - Haoming Liu (hl3797@nyu.edu)
