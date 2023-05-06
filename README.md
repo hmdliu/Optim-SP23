@@ -7,6 +7,7 @@ This repo presents a model for the optimization of water cooler placement. This 
 - `gams/main.gms`: Optimization model 
 - `dijkstra.py`: Shortest path distance
 - `vis.py`: Distance matrix visualization
+- `histogram.ipynb`: Popularity scores visualization
 
 ## Visualizations
 Heat map for the shortest path distance matrix:
